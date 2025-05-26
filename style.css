@@ -9,7 +9,7 @@ body, html {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
-  background: url('https://www.albany.edu/sites/default/files/styles/16x9_1440w/public/2022-10/suny_albany_sunset.jpg?itok=kCg--iHN') no-repeat center center fixed;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/University_at_Albany,_SUNY_-_campus_aerial_view_-_Apr_2016_%283%29.jpg/1920px-University_at_Albany,_SUNY_-_campus_aerial_view_-_Apr_2016_%283%29.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
   line-height: 1.6;
@@ -78,7 +78,7 @@ nav a.active {
   border-radius: 15px;
   max-width: 600px;
   margin: 0 auto;
-  color: #fff; /* bright text */
+  color: #fff;
 }
 
 .hero h1 {
@@ -113,7 +113,8 @@ nav a.active {
 }
 
 /* Content Sections */
-.content {
+.content,
+.about-content {
   background-color: rgba(0, 0, 0, 0.85); /* darker overlay for clarity */
   padding: 2rem 2rem 3rem 2rem;
   border-radius: 15px;
@@ -121,24 +122,28 @@ nav a.active {
   color: #eee;
 }
 
-.content h2, .about-content h1 {
+.content h2,
+.about-content h1 {
   color: #ffcc00;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-.content p {
+.content p,
+.about-content p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.content a {
+.content a,
+.about-content a {
   color: #ffcc00;
   font-weight: 600;
   text-decoration: none;
 }
 
-.content a:hover {
+.content a:hover,
+.about-content a:hover {
   text-decoration: underline;
 }
 
@@ -159,7 +164,9 @@ footer {
     font-size: 2.2rem;
   }
 
-  .hero p, .content p {
+  .hero p,
+  .content p,
+  .about-content p {
     font-size: 1rem;
   }
 
