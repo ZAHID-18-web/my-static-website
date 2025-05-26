@@ -8,7 +8,7 @@
 body, html {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #f0f0f0;
+  color: #222; /* darker text for light boxes */
   background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/University_at_Albany,_SUNY_-_campus_aerial_view_-_Apr_2016_%283%29.jpg/1920px-University_at_Albany,_SUNY_-_campus_aerial_view_-_Apr_2016_%283%29.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
@@ -22,7 +22,7 @@ body, html {
 .container {
   max-width: 900px;
   width: 90%;
-  margin: 0 auto;
+  margin: 3rem auto; /* add vertical margin for spacing */
 }
 
 /* Navigation */
@@ -67,7 +67,6 @@ nav a:visited {
 
 /* Hero Section */
 .hero {
-  flex: 1;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -78,33 +77,34 @@ nav a:visited {
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.8); /* darker overlay for clarity */
-  padding: 3rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85); /* light, mostly white box */
+  padding: 4rem 3rem;
   border-radius: 15px;
   max-width: 600px;
   margin: 0 auto;
-  color: #fff;
+  color: #222;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #ffdd55;
+  color: #004080;
 }
 
 .hero .highlight {
-  color: #ffdd55;
+  color: #ff9900;
 }
 
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #ddd;
+  color: #333;
 }
 
 .hero a.btn {
-  background-color: #ffdd55;
-  color: #004080;
+  background-color: #ff9900;
+  color: #fff;
   padding: 1rem 2.5rem;
   font-weight: 700;
   border-radius: 50px;
@@ -114,49 +114,51 @@ nav a:visited {
 }
 
 .hero a.btn:hover {
-  background-color: #e6b800;
-  color: #003366;
+  background-color: #e68a00;
+  color: #fff;
 }
 
 /* Content Sections */
 .content,
 .about-content {
-  background-color: rgba(0, 0, 0, 0.85); /* darker overlay for clarity */
-  padding: 2rem 2rem 3rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85); /* lighter box */
+  padding: 3rem 3rem 4rem 3rem; /* more padding for longer content */
   border-radius: 15px;
-  margin-bottom: 3rem;
-  color: #eee;
+  margin-bottom: 4rem; /* space between sections */
+  color: #222;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 .content h2,
 .about-content h1 {
-  color: #ffdd55;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .content p,
 .about-content p {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  color: #444;
 }
 
 .content a,
 .about-content a {
-  color: #ffdd55;
+  color: #ff9900;
   font-weight: 600;
   text-decoration: none;
 }
 
 .content a:visited,
 .about-content a:visited {
-  color: #ffdd55; /* lighter yellow for visited links */
+  color: #ff9900;
 }
 
 .content a:hover,
 .about-content a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #cc7a00;
 }
 
 /* Footer */
@@ -184,5 +186,11 @@ footer {
 
   nav a {
     font-size: 0.9rem;
+  }
+
+  .hero-overlay,
+  .content,
+  .about-content {
+    padding: 2rem 1.5rem;
   }
 }
