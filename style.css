@@ -42,7 +42,7 @@ nav {
 }
 
 nav a {
-  color: #f0f0f0;
+  color: #ffdd55; /* lighter yellow */
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 600;
@@ -57,7 +57,12 @@ nav a.logo {
 
 nav a:hover,
 nav a.active {
-  color: #ffcc00;
+  color: #fff; /* white on hover */
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: #ffdd55; /* keep lighter yellow after visiting */
 }
 
 /* Hero Section */
@@ -84,11 +89,11 @@ nav a.active {
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #ffcc00;
+  color: #ffdd55;
 }
 
 .hero .highlight {
-  color: #ffcc00;
+  color: #ffdd55;
 }
 
 .hero p {
@@ -98,7 +103,7 @@ nav a.active {
 }
 
 .hero a.btn {
-  background-color: #ffcc00;
+  background-color: #ffdd55;
   color: #004080;
   padding: 1rem 2.5rem;
   font-weight: 700;
@@ -110,6 +115,7 @@ nav a.active {
 
 .hero a.btn:hover {
   background-color: #e6b800;
+  color: #003366;
 }
 
 /* Content Sections */
@@ -118,59 +124,4 @@ nav a.active {
   background-color: rgba(0, 0, 0, 0.85); /* darker overlay for clarity */
   padding: 2rem 2rem 3rem 2rem;
   border-radius: 15px;
-  margin-bottom: 3rem;
-  color: #eee;
-}
-
-.content h2,
-.about-content h1 {
-  color: #ffcc00;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.content p,
-.about-content p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.content a,
-.about-content a {
-  color: #ffcc00;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.content a:hover,
-.about-content a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: rgba(0, 48, 96, 0.9);
-  color: #ccc;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
-  margin-top: auto;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p,
-  .content p,
-  .about-content p {
-    font-size: 1rem;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-  }
-}
+  marg
