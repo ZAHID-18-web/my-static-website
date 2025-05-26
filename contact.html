@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Zahidullah Attahi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero fade-in">
+    <h1>Contact Me</h1>
+    <p>You can reach me by email at <a href="mailto:zahidattahi721@gmail.com">zahidattahi721@gmail.com</a></p>
+  </section>
+
+  <section class="info fade-in">
+    <h2>Send a message</h2>
+    <form id="contactForm" action="https://formspree.io/f/myynkwbd" method="POST">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required /><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="_replyto" required /><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required></textarea><br/>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Zahidullah Attahi | <a href="mailto:zahidattahi721@gmail.com">Email Me</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
