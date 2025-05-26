@@ -1,32 +1,38 @@
-/* Reset and basics */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body, html {
+  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #004080; /* Full page background */
   color: #f0f0f0;
   line-height: 1.6;
-  min-height: 100vh;
+  background: url('https://www.albany.edu/sites/default/files/styles/16x9_1440w/public/2022-10/suny_albany_sunset.jpg?itok=kCg--iHN') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Container to limit width */
+/* Container */
 .container {
-  width: 90%;
   max-width: 900px;
+  width: 90%;
   margin: 0 auto;
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
-  background-color: #003060;
+  background-color: rgba(0, 48, 96, 0.85);
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav .container {
@@ -53,63 +59,109 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Main content */
-main.main-content {
+/* Hero Section */
+.hero {
   flex: 1;
-  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
   text-align: center;
+  position: relative;
+  padding: 0 1rem;
 }
 
-main.main-content h1 {
-  font-size: 3rem;
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
   margin-bottom: 1rem;
-}
-
-main.main-content .highlight {
   color: #ffcc00;
 }
 
-main.main-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.hero .highlight {
+  color: #ffcc00;
 }
 
-main.main-content a.btn {
-  display: inline-block;
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.hero a.btn {
   background-color: #ffcc00;
   color: #004080;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   font-weight: 700;
-  border-radius: 30px;
+  border-radius: 50px;
   text-decoration: none;
+  font-size: 1.2rem;
   transition: background-color 0.3s ease;
-  font-size: 1.1rem;
 }
 
-main.main-content a.btn:hover {
+.hero a.btn:hover {
   background-color: #e6b800;
 }
 
-/* Links inside paragraphs */
-a {
+/* Content Sections */
+.content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  color: #eee;
+}
+
+.content h2 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.content a {
   color: #ffcc00;
   font-weight: 600;
   text-decoration: none;
 }
 
-a:hover {
+.content a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background-color: #003060;
+  background-color: rgba(0, 48, 96, 0.85);
+  color: #ccc;
   text-align: center;
   padding: 1rem 0;
-  color: #ccc;
   font-size: 0.9rem;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p, .content p {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
 }
