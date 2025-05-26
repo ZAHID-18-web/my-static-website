@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset and basics */
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +7,26 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f7f9;
-  color: #333;
+  background-color: #004080; /* Full page background */
+  color: #f0f0f0;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Container to limit width */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* Navigation */
+/* Navigation bar */
 nav {
-  background-color: #004080;
-  color: white;
+  background-color: #003060;
   padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 nav .container {
@@ -32,91 +36,80 @@ nav .container {
 }
 
 nav a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 nav a.logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
 }
 
-/* Hero/Header */
-.hero {
-  background: linear-gradient(135deg, #0066cc, #004080);
-  color: white;
-  padding: 6rem 0;
+/* Main content */
+main.main-content {
+  flex: 1;
+  padding: 4rem 0;
   text-align: center;
-  margin-bottom: 2rem;
-  border-radius: 0 0 15px 15px;
 }
 
-.hero h1 {
+main.main-content h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.25rem;
+main.main-content .highlight {
+  color: #ffcc00;
+}
+
+main.main-content p {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero a.btn {
+main.main-content a.btn {
+  display: inline-block;
   background-color: #ffcc00;
   color: #004080;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 2rem;
   font-weight: 700;
-  border-radius: 50px;
+  border-radius: 30px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-}
-
-.hero a.btn:hover {
-  background-color: #e6b800;
-}
-
-/* Content section */
-.content {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
-}
-
-.content h1 {
-  color: #004080;
-  margin-bottom: 1rem;
-}
-
-.content p {
-  margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
-.content a {
-  color: #004080;
+main.main-content a.btn:hover {
+  background-color: #e6b800;
+}
+
+/* Links inside paragraphs */
+a {
+  color: #ffcc00;
   font-weight: 600;
   text-decoration: none;
 }
 
-.content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
+  background-color: #003060;
   text-align: center;
-  padding: 1.5rem 0;
-  background-color: #e9ecef;
-  color: #555;
+  padding: 1rem 0;
+  color: #ccc;
   font-size: 0.9rem;
-  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
 }
