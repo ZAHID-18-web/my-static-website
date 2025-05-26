@@ -10,8 +10,8 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
   line-height: 1.6;
-  background: url('https://www.albany.edu/sites/default/files/styles/16x9_1440w/public/2022-10/suny_albany_sunset.jpg?itok=kCg--iHN') no-repeat center center fixed;
-  background-size: cover;
+  background:  url('https://upload.wikimedia.org/wikipedia/commons/4/48/University_at_Albany_SUNY_sign.JPG') no-repeat center center fixed;
+background-size: cover;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
