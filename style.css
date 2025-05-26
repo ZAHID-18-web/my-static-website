@@ -73,11 +73,12 @@ nav a.active {
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8); /* darker overlay for clarity */
   padding: 3rem 2rem;
   border-radius: 15px;
   max-width: 600px;
   margin: 0 auto;
+  color: #fff; /* bright text */
 }
 
 .hero h1 {
@@ -113,7 +114,7 @@ nav a.active {
 
 /* Content Sections */
 .content {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85); /* darker overlay for clarity */
   padding: 2rem 2rem 3rem 2rem;
   border-radius: 15px;
   margin-bottom: 3rem;
